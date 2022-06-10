@@ -109,7 +109,7 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jPanel2" pref="0" max="32767" attributes="0"/>
+                          <Component id="jPanel2" pref="1116" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -425,7 +425,7 @@
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel8">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="DNI"/>
+                            <Property name="text" type="java.lang.String" value="C.C"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JTextField" name="txtdni">
@@ -443,9 +443,6 @@
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
-                            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="2" name="C:\Users\blood\Documents\NetBeansProjects\parkingSystemJava\ParkingJava\src\main\java\images\icon_add.png"/>
-                            </Property>
                             <Property name="text" type="java.lang.String" value="Registrar"/>
                           </Properties>
                           <Events>
@@ -460,9 +457,6 @@
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
-                            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="2" name="C:\Users\blood\Documents\NetBeansProjects\parkingSystemJava\ParkingJava\src\main\java\images\icon_update.png"/>
-                            </Property>
                             <Property name="text" type="java.lang.String" value="Modificar"/>
                           </Properties>
                           <Events>
@@ -476,9 +470,6 @@
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                            </Property>
-                            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="2" name="C:\Users\blood\Documents\NetBeansProjects\parkingSystemJava\ParkingJava\src\main\java\images\icon_delete.png"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="Eliminar"/>
                           </Properties>
@@ -528,7 +519,7 @@
                     </Container>
                     <Component class="javax.swing.JTextField" name="jTextField4">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="jTextField4"/>
+                        <Property name="toolTipText" type="java.lang.String" value=""/>
                       </Properties>
                     </Component>
                     <Container class="javax.swing.JPanel" name="jPanel6">

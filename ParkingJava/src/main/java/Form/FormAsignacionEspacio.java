@@ -68,7 +68,6 @@ public class FormAsignacionEspacio extends javax.swing.JFrame {
 
         btnlogin.setBackground(new java.awt.Color(157, 243, 196));
         btnlogin.setForeground(new java.awt.Color(255, 255, 255));
-        btnlogin.setIcon(new javax.swing.ImageIcon("C:\\Users\\blood\\Documents\\NetBeansProjects\\parkingSystemJava\\ParkingJava\\src\\main\\java\\images\\icon_search.png")); // NOI18N
         btnlogin.setText("Buscar");
         btnlogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -78,7 +77,6 @@ public class FormAsignacionEspacio extends javax.swing.JFrame {
 
         btnlogin1.setBackground(new java.awt.Color(157, 243, 196));
         btnlogin1.setForeground(new java.awt.Color(255, 255, 255));
-        btnlogin1.setIcon(new javax.swing.ImageIcon("C:\\Users\\blood\\Documents\\NetBeansProjects\\parkingSystemJava\\ParkingJava\\src\\main\\java\\images\\icon_add.png")); // NOI18N
         btnlogin1.setText("Nuevo Cliente");
         btnlogin1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -163,10 +161,10 @@ public class FormAsignacionEspacio extends javax.swing.JFrame {
                             .addComponent(jLabel9)
                             .addComponent(jLabel8)
                             .addComponent(jLabel10))
-                        .addGap(51, 51, 51)
+                        .addGap(46, 46, 46)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField12)
-                            .addComponent(jTextField10)))
+                            .addComponent(jTextField10)
+                            .addComponent(jTextField12)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
@@ -230,7 +228,6 @@ public class FormAsignacionEspacio extends javax.swing.JFrame {
 
         btnlogin2.setBackground(new java.awt.Color(157, 243, 196));
         btnlogin2.setForeground(new java.awt.Color(255, 255, 255));
-        btnlogin2.setIcon(new javax.swing.ImageIcon("C:\\Users\\blood\\Documents\\NetBeansProjects\\parkingSystemJava\\ParkingJava\\src\\main\\java\\images\\icon_add.png")); // NOI18N
         btnlogin2.setText("Registrar");
         btnlogin2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
