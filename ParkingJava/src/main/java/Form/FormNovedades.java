@@ -11,17 +11,18 @@ import java.awt.Color;
  *
  * @author FrankS
  */
-public class FormTarifaHora extends javax.swing.JFrame {
+public class FormNovedades extends javax.swing.JFrame {
 
     /**
-     * Creates new form FormTarifaHora
+     * Creates new form FormTarifaDia
      */
-    public FormTarifaHora() {
+    public FormNovedades() {
         initComponents();
         setLocationRelativeTo(null);
         this.getContentPane().setBackground(Color.decode("#FFFFFF"));
-        Clases.CTarifaHora ctarifahora = new Clases.CTarifaHora();
-        ctarifahora.MostrarTarifaHora(tbtarfiaHora);
+        Clases.CTarifaDia ctarifadia = new Clases.CTarifaDia();
+        ctarifadia.MostrarTarifaDia(tbtarifadia);
+        
     }
 
     /**
@@ -33,29 +34,25 @@ public class FormTarifaHora extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel2 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        txttarifahora = new javax.swing.JTextField();
-        txtCodTarifaHora = new javax.swing.JTextField();
+        txttarifadia = new javax.swing.JTextField();
+        txtCodTarifaDia = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tbtarfiaHora = new javax.swing.JTable();
+        tbtarifadia = new javax.swing.JTable();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Administración Tarifa Hora");
-
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(45, 45, 45));
-        jLabel2.setText("Tarifa de Hora");
+        setTitle("Administración Tarifa Día");
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(45, 45, 45)));
 
         jLabel1.setForeground(new java.awt.Color(45, 45, 45));
-        jLabel1.setText("Tarifa de Hora");
+        jLabel1.setText("Tarifa de Día");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -64,10 +61,10 @@ public class FormTarifaHora extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(jLabel1)
-                .addGap(9, 9, 9)
-                .addComponent(txtCodTarifaHora, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(txttarifahora, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txtCodTarifaDia, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(txttarifadia, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(22, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -76,8 +73,8 @@ public class FormTarifaHora extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(txttarifahora, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtCodTarifaHora, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txttarifadia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtCodTarifaDia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -111,7 +108,7 @@ public class FormTarifaHora extends javax.swing.JFrame {
             }
         });
 
-        tbtarfiaHora.setModel(new javax.swing.table.DefaultTableModel(
+        tbtarifadia.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {},
                 {},
@@ -122,12 +119,16 @@ public class FormTarifaHora extends javax.swing.JFrame {
 
             }
         ));
-        tbtarfiaHora.addMouseListener(new java.awt.event.MouseAdapter() {
+        tbtarifadia.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                tbtarfiaHoraMouseClicked(evt);
+                tbtarifadiaMouseClicked(evt);
             }
         });
-        jScrollPane1.setViewportView(tbtarfiaHora);
+        jScrollPane1.setViewportView(tbtarifadia);
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(45, 45, 45));
+        jLabel2.setText("Tarifa de Día");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -135,18 +136,18 @@ public class FormTarifaHora extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel2))
+                        .addComponent(jLabel2)
+                        .addGap(100, 100, 100))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -172,31 +173,31 @@ public class FormTarifaHora extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-     Clases.CTarifaHora tarifahora = new Clases.CTarifaHora();
-     tarifahora.AgregarTarifaHora(txttarifahora);
-     tarifahora.MostrarTarifaHora(tbtarfiaHora);
-     txttarifahora.setText("");
+       Clases.CTarifaDia tarifadia = new Clases.CTarifaDia();
+       tarifadia.AgregarTarifaDia(txttarifadia);
+       tarifadia.MostrarTarifaDia(tbtarifadia);
+       txttarifadia.setText("");
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void tbtarfiaHoraMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbtarfiaHoraMouseClicked
-       Clases.CTarifaHora tarifaHora = new Clases.CTarifaHora();
-       tarifaHora.seleccionarTarifaHora(tbtarfiaHora, txtCodTarifaHora, txttarifahora);
-    }//GEN-LAST:event_tbtarfiaHoraMouseClicked
+    private void tbtarifadiaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbtarifadiaMouseClicked
+        Clases.CTarifaDia tarifaDia = new Clases.CTarifaDia();
+        tarifaDia.seleccionarTarifaDia(tbtarifadia, txtCodTarifaDia, txttarifadia);
+    }//GEN-LAST:event_tbtarifadiaMouseClicked
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        Clases.CTarifaHora tarifaHora = new Clases.CTarifaHora();
-        tarifaHora.modificarTarifaHora(txtCodTarifaHora, txttarifahora);
-        tarifaHora.MostrarTarifaHora(tbtarfiaHora);
-        txtCodTarifaHora.setText("");
-        txttarifahora.setText("");
+        Clases.CTarifaDia tarifaDia = new Clases.CTarifaDia();
+        tarifaDia.modificarTarifaDia(txtCodTarifaDia, txttarifadia);
+        tarifaDia.MostrarTarifaDia(tbtarifadia);
+        txtCodTarifaDia.setText("");
+        txttarifadia.setText("");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-         Clases.CTarifaHora tarifaHora = new Clases.CTarifaHora();
-        tarifaHora.eliminarTarifaHora(txtCodTarifaHora);
-        tarifaHora.MostrarTarifaHora(tbtarfiaHora);
-        txtCodTarifaHora.setText("");
-        txttarifahora.setText("");
+        Clases.CTarifaDia tarifadia = new Clases.CTarifaDia();
+        tarifadia.eliminarTarifaDia(txtCodTarifaDia);
+        tarifadia.MostrarTarifaDia(tbtarifadia);
+        txtCodTarifaDia.setText("");
+        txttarifadia.setText("");
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
@@ -216,20 +217,20 @@ public class FormTarifaHora extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FormTarifaHora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormTarifaDia.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FormTarifaHora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormTarifaDia.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FormTarifaHora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormTarifaDia.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FormTarifaHora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormTarifaDia.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FormTarifaHora().setVisible(true);
+                new FormTarifaDia().setVisible(true);
             }
         });
     }
@@ -242,8 +243,8 @@ public class FormTarifaHora extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable tbtarfiaHora;
-    private javax.swing.JTextField txtCodTarifaHora;
-    private javax.swing.JTextField txttarifahora;
+    private javax.swing.JTable tbtarifadia;
+    private javax.swing.JTextField txtCodTarifaDia;
+    private javax.swing.JTextField txttarifadia;
     // End of variables declaration//GEN-END:variables
 }
